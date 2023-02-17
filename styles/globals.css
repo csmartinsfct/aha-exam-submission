@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* affects Sidebar width and Layout (shifts layout to the right) */
+:root {
+  --sidebar-width-desktop: 80px;
+  --sidebar-height-mobile: 66px;
+  --max-width-home: 725px;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  }
+}
